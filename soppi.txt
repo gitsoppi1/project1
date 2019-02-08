@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+   build: /root/food/code
+   ports:
+    - "86:80"
+   volumes:
+    - "/root/food/code/:/var/www/html/"
