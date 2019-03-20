@@ -1,0 +1,75 @@
+centralised version control system  - two tree  - working and repository  single point of failure - svn   
+
+distributed version control system  - three tree - working area and staging and localrepo - remote  github or bitbucket
+                                                      phy               v          v           v push
+													  
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+
+------------------ GIT Commands ----------------------------
+
+git init
+git config --global user.name "sid"
+git config --global user.email "sid@gmail.com"
+git config --local user.name "sanju"
+git config --local user.email "sanju@gmail.com"
+git config --list
+git config --local --list
+git config --global --list
+git config --author="sid"
+git config -i --grep="pincode"
+git add <file-name>
+git add . ---------------- .(dot) it represents all files in tht particular directory
+git commit -m "git meassage"
+git log
+git log --oneline      ----- shows output in oneline format like it show only commit id and commit meassage
+git log <commit-id>
+git show <commit-id>
+git show HEAD
+git status
+git reflog
+git branch                  ----- it shows the list of branches
+git branch <branch-name>    ----- creating a new branch
+git branch -D <branch-name> ----- delete branch 
+git checkout <branch-name>  ----- swithcing between multiple branches
+git merge <branch-name>     ----- to merge the latest code in to master or from master to other branches.
+git reset HEAD <filename>   ----- to undo the last change in staging area it comes to working area.
+git checkout -- <filename>  ----- to undo the last file modification change in working area.
+git rm filename1 filename2 ...
+git stash
+git stash list
+git stash show <stash-id>
+git stash apply
+git stash pop
+git stash drop <stash-id>
+git remote -v
+git remote add origin https://github.com/sarathkgit/html.git
+git push -u origin master
+git push --all            ---------- to push all branches to remote repository
+git pull                  ---------- to pull data from remote repo to local repo
+git fetch + git merge     ---------- same like git pull
+git clone https://github.com/sarathkgit/java.git
+git branch -a
+git checkout <commit-id>   -----  Detach HEAD
+
+
+
+
+
+
+
+
+
+
+
